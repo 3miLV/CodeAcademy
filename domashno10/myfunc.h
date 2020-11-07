@@ -1,0 +1,10 @@
+int evenOrNot();
+void decToBin(unsigned n);
+float faceOfTriangle(float a, float b);
+float faceOfRectangle(float faceOfTriangle);
+float returnABC(int a, int b, int c);
+float returnAB4(int a, int b);
+double circleArea(double r);
+double area();
+int add(int a, int b);
+int incr(int c);
