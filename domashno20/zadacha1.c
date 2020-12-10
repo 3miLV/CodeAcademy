@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+union tagMyData{
+    int m_nValue;
+    float m_fValue;
+    char m_szText[32];
+};
+
+int main (){
+    union tagMyData data = {13};
+    printf("Memory size: sizeof(data): %d\n", sizeof(data));
+    printf("m_nValue: %d, fValue: %f, Test: %s\n",
+            data.m_nValue, data.m_fValue, data.m_szText);
+    return 0;
+}
