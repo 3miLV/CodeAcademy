@@ -29,15 +29,15 @@ Account::~Account(){
 }
 
 
- std::string Account::compare_balance(const Account &&bal1){
-    std::cout << this->balance << " " << bal1.balance << std::endl;
-    if(this->balance == bal1.balance){
+ std::string Account::compare_balance(const Account &&bal1, const Account &&bal2){
+    std::cout << bal1.balance << " " << bal2.balance << std::endl;
+    if(bal1.balance == bal2.balance){
         return "подали сте един и същ обект.";
     }
-    if(*this->balance < *bal1.balance){
+    if(*bal1.balance < *bal2.balance){
         return "баланс2 е поголям от баланс1.";
     }
-    else if(*this->balance > *bal1.balance){
+    else if(*bal1.balance > *bal2.balance){
          return "баланс1 е поголям от баланс2.";
     }
     return "балансите са равни";
